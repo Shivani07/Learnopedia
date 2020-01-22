@@ -1,0 +1,29 @@
+<html>
+<head><title>applyM</title>
+<link rel="stylesheet" type="text/css" href="learno1.css">
+</head>
+
+
+<p id="p"></p>
+
+<div class="data">
+<textarea id="code" style="float:left" rows="20" cols="130" border-style="none">
+<html>
+<body>
+<script>
+document.write(Date());
+</script>
+</body>
+</html>
+</textarea rows="50" cols="50">
+</div>
+<div>
+<button onclick=myfun() class="button">click</button>
+<script>
+function myfun(){
+var text=document.getElementById("code").value
+var y=document.getElementById("p").innerHTML=text;
+document.write(y);} 
+</script>
+</div>
+</html>

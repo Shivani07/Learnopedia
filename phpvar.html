@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>PHP Tutorial</title>
+<link rel="stylesheet" type="text/css" href="learno1.css">
+</head>
+<body>
+<div id="contentbar">
+<div class="data" id="odd">
+<h1>PHP variables</h1>
+In PHP, a variable starts with the $ sign, followed by the name of the variable
+<h2>Example</h2>
+<span style="font-family:courier new;color:red" ><</span>
+<span style="font-family:courier new;color:red" >?php</span><br>
+<span style="font-family:courier new;color:red" >$x=5;</span><br>
+<span style="font-family:courier new;color:red" >?</span>
+<span style="font-family:courier new;color:red" >></span>
+<p>The above statements will decalre a variable 'x' with the value '5' in it.<br>
+Unlike other programming languages, PHP has no command for declaring a variable. It is created the moment you first assign a value to it.<br>
+<b>NOTE:</b>PHP is case sensitive i.e. <span style="color:red">$x</span> and <span style="color:red">$X</span> are treated differently.
+</p>
+</div>
+<div class="data" id="even">
+<b>Rules for PHP variables</b>
+<ul>
+	<li>A variable starts with the $ sign, followed by the name of the variable.
+	<li>A variable name must start with a letter or the underscore character
+	<li>A variable name cannot start with a number
+	<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+	<li>Variable names are case-sensitive ($age and $AGE are two different variables)
+</ul>
+</div>
+<div class="data" id="odd">
+<h2>Variable Scope</h2>
+In PHP, variables can be declared anywhere in the script.<br>
+
+The scope of a variable is the part of the script where the variable can be referenced.<br>
+
+PHP has three different variable scopes:<br>
+<dl>
+	<dt><span style="font-size:1.5em">Global</span>
+		<dd>A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function.
+</div>
+<div class="data" id="even">
+		<h3>example</h3>
+		<span style="font-family:courier new;color:red" ><</span>
+		<span style="font-family:courier new;color:red" >?php</span><br>
+		<span style="font-family:courier new;color:red" >$x=5; </span>
+		<span style="font-family:courier new;color:brown" >//global variable </span><br>
+		<span style="font-family:courier new;color:red" >function</span><br>
+		<span style="font-family:courier new;color:red" >myFunc(){</span><br>
+		<span style="font-family:courier new;color:red" >echo</span><br>
+		<span style="font-family:courier new;color:brown" >"value of variable is ".$x;</span><br>
+		<span style="font-family:courier new;color:red" >}</span><br>
+		<span style="font-family:courier new;color:red" >?</span>
+		<span style="font-family:courier new;color:red" >></span>
+		<h3>Output</h3>
+		value of variable is 5<br>
+		The Global keyword is used to declare the variable global.<br>
+		<h3>Example</h3>
+		<span style="font-family:courier new;color:red" >function</span><br>
+		<span style="font-family:courier new;color:red" >myFunc(){</span><br>
+		<span style="font-family:courier new;color:red" >global $x=5; </span>
+		<span style="font-family:courier new;color:red" >echo</span><br>
+		<span style="font-family:courier new;color:brown" >"value of variable is ".$x;</span><br>
+		<span style="font-family:courier new;color:red" >}</span><br>
+		</dd>
+	<dt><span style="font-size:1.5em">Local</span>
+	<dd>A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function<br>
+	<h3>example</h3>
+		<span style="font-family:courier new;color:red" ><</span>
+		<span style="font-family:courier new;color:red" >?php</span><br>
+		<span style="font-family:courier new;color:red" >function</span><br>
+		<span style="font-family:courier new;color:red" >myFunc(){</span><br>
+			<span style="font-family:courier new;color:red" >$x=5; </span>
+				<span style="font-family:courier new;color:brown" >//local variable </span><br>
+		<span style="font-family:courier new;color:red" >echo</span><br>
+		<span style="font-family:courier new;color:brown" >"value of variable is ".$x;</span><br>
+		<span style="font-family:courier new;color:red" >}</span><br>
+		<span style="font-family:courier new;color:red" >?</span>
+		<span style="font-family:courier new;color:red" >></span>
+		<h3>Output</h3>
+		value of variable is 5<br>
+	</dd>
+	<dt><span style="font-size:1.5em">Static</span>
+	<dd>
+	A static variable is not deleted even after the execution of the function.
+	<br>It is once initialized does not loose its value between different function calls.<br>
+	We use <b>static</b> keyword to declare a variable static.<br>
+	<h3>Example</h3>
+	<span style="font-family:courier new;color:red" ><</span>
+		<span style="font-family:courier new;color:red" >?php</span><br>
+		<span style="font-family:courier new;color:red" >function</span><br>
+		<span style="font-family:courier new;color:red" >myFunc(){</span><br>
+			<span style="font-family:courier new;color:red" >static $x=5; </span>
+				<span style="font-family:courier new;color:brown" >//static variable </span><br>
+		<span style="font-family:courier new;color:red" >echo</span><br>
+		<span style="font-family:courier new;color:brown" >"value of variable is ".$x;</span><br>
+		<span style="font-family:courier new;color:red" >$x=$x+2;</span>
+		<span style="font-family:courier new;color:red" >}</span><br>
+		<span style="font-family:courier new;color:red" >?</span>
+		<span style="font-family:courier new;color:red" >></span><br>
+		<span style="font-family:courier new;color:red" >myFunc();</span><br>
+		<span style="font-family:courier new;color:red" >myFunc();</span><br>
+		<span style="font-family:courier new;color:red" >myFunc();</span><br>
+</div>
+<div class="data" id="even">
+		<h3>Output</h3>
+		value of variable is 5<br>
+		value of variable is 7<br>
+		value of variable is 9<br>
+	</dd>
+</dl>
+</div>
+<div class="odd" style="float:left">
+<a href="phpstring.html" target="content" class="s">previous chapter</a>
+</div>
+</div>

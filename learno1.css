@@ -1,0 +1,236 @@
+<style>
+	#main{
+		padding:0px 0px;
+		margin:0px 0px;
+		overflow-y:hidden;
+		}
+	.logo{
+		font-family:"Gabriola";
+		font-weight:bolder;
+		font-size:300%;
+		}
+	.com{
+		color:#008ae6;
+		margin-top:0%;
+		}
+	#head,#logo,#menuref{
+		float:left;
+		}
+	#head,#menuref{
+		width:70%;
+		height:10%
+		}
+	.reference{
+		width:50%;
+		}
+	#tagline,#socicon{
+		float:right;
+		width:30%;
+		height:10%;
+		}
+		
+	#menubar{
+		margin-top:5%;;
+		width:100%;
+		}
+	#sub{
+		margin-top:0%;;
+		width:100%;
+		height:10%;
+		}
+	#menuicon{
+		padding:5px;
+		margin-top:20px;
+		float:left;
+		background-color:lightblue;
+		color:white;
+		font-family:gabriola;
+		font-size:20px;
+		font-weight:bold;
+		}
+	.but{
+		border-radius:8px;
+		border:3px solid #008ae6;
+		height:82%;
+		color: #008ae6;
+		font-weight:bold;
+    	background-color:white;
+		border-right:none;
+		}
+	.button {
+    	background-color:white;
+    	border: 2px;
+		border-color: #f2f2f2;
+		border-left-style:solid;
+		border-radius:8px;
+	    color: white;
+    	padding: 10px 20px;
+	    text-align: center;
+    	text-decoration: none;
+	    display: inline-block;
+    	font-size: 10px;
+	    margin: 2px 0px;
+    	cursor: pointer;
+	    transition:0.3s;
+		//font-size:120%;
+		//color:#b3e0ff;
+		color: #008ae6;
+		font-size:20;
+		}
+		
+	.sidebuton{
+		background-color:#1aa3ff;
+    	border: 2px;
+    	color: white;
+		border-radius:8px;
+	    padding: 3px 3px;
+	   	text-align:center;
+		padding-left:10%;
+    	text-decoration: none;
+    	display:inline-block blue;
+	    font-size: 10px;
+	    margin: 2px 0px;
+    	cursor: pointer;
+	    transition:all 0.3s;
+		width:100%;
+		color: #000080;
+		font-size:120%;
+		vertical-align:middle;
+		overflow-x:hidden;
+		}
+		
+	#sidebar{
+		float:left;
+		background-color:#1aa3ff;
+		width:100%;
+		border-radius:8px;
+		}
+	.sidebuton:hover{
+		background-color:#1affff;
+		}
+	.sidebuton span:after{
+		content: '»';
+		position: absolute;
+		right: -1000%;
+		}
+	.sidebuton:hover span{
+  		padding-right: 25px;
+		}
+	.sidebuton:hover span:after{
+  		opacity: 1;
+  		right: 0;
+		}
+	.sidebuton span {
+  			cursor: pointer;
+  			display: inline-block;
+			position: relative;
+			transition: 0.3s;
+		}
+
+	h2{
+		text-align:left;
+		padding-left:6%;
+		letter-spacing:+3;
+		}
+	button:hover{
+		color:white;
+		background-color:#008ae6;
+	}
+	/*a.x{
+		text-decoration:none;
+		color: #4dc3ff;
+		font-size:20;
+		}
+ 	a.x:hover{
+		color:white;
+		background-color:lightblue;
+		}*/
+	.data{
+		position:relative;
+		margin-top:5%;
+		padding-left:3%;
+		border:solid #1aa3ff;
+		border-radius:8px;
+		width:70%;
+		margin-left:6%;
+		color:black;
+		font-family:"Tw Cen MT";
+		font-size:0.6em;
+		font-style:italic;
+		font-weight:400;
+		overflow-x:hidden;
+		}
+	#even{
+		border-width:10px 90px 10px 10px;
+		}
+	#odd{
+		border-width:10px 10px 10px 90px;
+		}
+	#contentbar{
+			font-family:HP Simplified;
+			font-size:40px;
+			color:black;
+			font-weight:normal;
+			width:95%;
+			padding-left:5%;
+			overflow-x:hidden;
+			}
+	#content{
+			float:right;
+			border:3px solid #008ae6;
+			border-left:none;
+			border-radius:8px;
+	}
+	#sidecontent{
+		//position:absolute;
+		float:left;
+			border:3px solid #008ae6;
+			border-right:none;
+			border-radius:8px;
+	}
+	#contentlogo{
+			border:3px solid #008ae6;
+			border-bottom:none;
+			border-top:none;
+			border-radius:8px;
+	}
+	h3{
+	margin-right:2%;
+	padding-left:0%;
+	font-style:oblique;
+	font-family:"Lucida Sans Typewriter";
+	//text-decoration:underline;
+	border-bottom:dashed 1px;
+	}
+	/*a.s{
+		text-decoration:none;
+		color: #4dc3ff;
+		font-size:20;
+		}
+	a.s:hover{
+		background-color:white;
+		}*/
+	#sp{
+		font-size:0.9em;
+		color:#334d4d;
+	}
+	#ps{
+		font-size:0.9em;
+		color:#486a6a;
+	}
+	li{
+		padding-left:5%;
+	}
+	b{
+		color:#679898;
+	}
+	.ex1{
+		background-color:#94b8b8;
+		color:#333333;
+		margin-right:2%;
+	}
+	body{
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	}
+</style>

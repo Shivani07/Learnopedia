@@ -1,0 +1,211 @@
+<style>
+	#main{
+		padding:0px 0px;
+		margin:0px 0px;
+		}
+	.logo{
+		font-family:HP Simplified;
+		font-size:260%;
+		}
+	.com{
+		color:lightblue;
+		margin-top:0%;
+		}
+	#head,#logo,#menuref{
+		float:left;
+		}
+	#head{
+		width:90%;
+		height:10%;
+		margin-top:1%;
+		margin-left:1%;
+		}
+	#menuref{
+		width:70%;
+		height:10%;
+		margin-top:4%;
+		margin-left:1%;
+		}
+	.reference{
+		width:50%;
+		}
+	#tagline{
+		float:right;
+		width:30%;
+		height:10%;
+		margin-top:0%;
+	}
+	#socicon{
+		float:right;
+		width:20%;
+		height:10%;
+		margin-top:4%;
+		}
+		
+	#menubar{
+		//margin-top:8%;
+		width:100%;
+		}
+	#sub{
+		//margin-top:0%;
+		width:100%;
+		height:10%;
+		}
+	#menuicon{
+		padding:5px;
+		margin-top:20px;
+		float:left;
+		background-color:lightblue;
+		color:white;
+		font-family:HP Simplified;
+		font-size:20px;
+		font-weight:bold;
+		}
+
+	.button {
+    	background-color:white;
+    	border: 2px;
+		border-color:#f2f2f2;
+		border-left-style:solid;
+	    color: white;
+    	padding: 10px 20px;
+	    text-align: center;
+    	text-decoration: none;
+	    display: inline-block;
+    	font-size: 10px;
+	    margin: 2px 0px;
+    	cursor: pointer;
+	    transition:.3s;
+		//font-size:150%;
+		//color:#b3e0ff;
+		text-decoration:none;
+		color: #4dc3ff;
+		font-size:20;
+		}
+	.sidebuton{
+		background-color:#e6f2ff;
+    	border: 2px;
+    	color: white;
+	    padding: 3px 3px;
+	   	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+	    font-size: 10px;
+	    margin: 2px 0px;
+    	cursor: pointer;
+	    transition:.3s;
+		width:100%;
+		font-size:120%;
+		color:#b3e0ff;
+	}
+	#sidebar{
+		float:left;
+		background-color:#e6f2ff;
+		height:auto;
+		width:100%;
+		}
+	.sidebuton:hover{
+	
+		background-color:white;
+		}
+	h2{
+		text-align:center;
+		letter-spacing:+3;
+		}
+	button:hover{
+		color:white;
+		background-color:lightblue;
+	}
+	a.x{
+		text-decoration:none;
+		color: #4dc3ff;
+		font-size:20;
+		}
+ 	a.x:hover{
+		color:white;
+		background-color:lightblue;
+		}
+	.data{
+		position:relative;
+		margin-top:5%;
+		border:solid #e6f2ff;
+		border-width:10px 70px 10px 10px;
+		width:70%;
+		height:50%;
+		margin-left:20%;
+		}
+	#even{
+		border-width:10px 70px 10px 10px;
+		}
+	#odd{
+		border-width:10px 10px 10px 70px;
+		}
+	#contentbar{
+			//margin-top:5%;
+			width:100%;
+			height:auto;
+		}
+	#contentbar{
+			font-family:HP Simplified;
+			font-size:40px;
+			color:Lightblue;
+			font-weight:bolder;
+			}
+	a.s{
+		text-decoration:none;
+		color: #4dc3ff;
+		font-size:20;
+		}
+	a.s:hover{
+		background-color:white;
+		}
+#forum{
+	width:100%;
+	margin-left:0%;
+	//color: #e6f2ff;
+	border:3px solid  #e6f2f;
+	
+	
+}
+div.co{
+
+	//background-color:white;
+	width:40%;
+	padding:1%;
+	margin:1%
+}
+h2.fr{
+	font-family:HP Simplified;
+	font-size:2.5em
+}
+p.for{
+	font-family:Courier New;
+	font-size:18;
+	font-weight:bold;
+	color: #4dc3ff;
+}
+/*.halign{
+	text-align:left;
+	text-decoration:none;
+	font-family:calibri;
+}
+h1{
+	font-size:2em;
+}
+h2{
+		font-size:1.3em;
+}
+h3{
+		font-size:.9em;
+
+}*/
+.prevlinks{
+	float:left;
+	margin-left:2%
+}
+.nextlinks{
+	float:right;
+	margin-right:2%
+}
+
+</style>

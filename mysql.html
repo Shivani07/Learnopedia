@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>MySQL Tutorial</title>
+</head>
+<body>
+<h1>What is MySql ?</h1>
+<ul>
+<li>MySQL is a database system used on the web
+<li>MySQL is a database system that runs on a server
+<li>MySQL is ideal for both small and large applications
+<li>MySQL is very fast, reliable, and easy to use
+<li>MySQL uses standard SQL
+<li>MySQL compiles on a number of platforms
+<li>MySQL is free to download and use
+<li>MySQL is developed, distributed, and supported by Oracle Corporation.
+<li>The data in a MySQL database are stored in tables.
+<li>PHP combined with MySQL are cross-platform.
+</ul>
+<h1>Connecting PHP to MySQL</h1>
+There are two ways to connect to MySQL database:
+<ul>
+<li><b>MySQLi extension- </b>used in PHP5 ans later version.
+<li><b>PDO(PHP Data Objects)</b>
+</ul>
+</b>NOTE:</b>Earlier versions of PHP used the MySQL extension. However, this extension was deprecated in 2012.
+<h2>Opening Connection to the database</h2>
+<h3>MySQLi(Object Oriented)</h3>
+<span style="font-family:courier new;color:red"><</span>
+<span style="font-family:courier new;color:red">?php</span><br>
+<span style="font-family:courier new;color:red">$servername="localhost";</span><br>
+<span style="font-family:courier new;color:red">$username="user";</span><br>
+<span style="font-family:courier new;color:red">$password="pass";</span><br>
+<span style="font-family:courier new;color:brown">$conn = new mysqli($servername, $username, $password);</span>&nbsp&nbsp&nbsp //create connection<br>
+<span style="font-family:courier new;color:brown">if ($conn->connect_error()) {</span>&nbsp&nbsp&nbsp //check connection<br>
+ <span style="font-family:courier new;color:red">   die("Connection failed: " . $conn->connect_error);<br>
+} <br>
+echo "Connected successfully";<br>
+?></span>
+<h3>MySQLi(Procedural)</h3>
+<span style="font-family:courier new;color:red"><</span>
+<span style="font-family:courier new;color:red">?php</span><br>
+<span style="font-family:courier new;color:red">$servername="localhost";</span><br>
+<span style="font-family:courier new;color:red">$username="user";</span><br>
+<span style="font-family:courier new;color:red">$password="pass";</span><br>
+<span style="font-family:courier new;color:brown">$conn =mysqli_connect($servername, $username, $password);</span>&nbsp&nbsp&nbsp //create connection<br>
+<span style="font-family:courier new;color:brown">if (!$conn) {</span>&nbsp&nbsp&nbsp //check connection<br>
+ <span style="font-family:courier new;color:red">   die("Connection failed: " . $conn->connect_error);<br>
+} <br>
+echo "Connected successfully";<br>
+?></span>
+<h3>PDO</h3>
+<span style="font-family:courier new;color:red"><</span>
+<span style="font-family:courier new;color:red">?php</span><br>
+<span style="font-family:courier new;color:red">$servername="localhost";</span><br>
+<span style="font-family:courier new;color:red">$username="user";</span><br>
+<span style="font-family:courier new;color:red">$password="pass";</span><br>
+<span style="font-family:courier new;color:red">try{</span><br>
+<span style="font-family:courier new;color:brown">$conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password)</span>&nbsp&nbsp&nbsp //create connection<br>
+<br>// set the PDO error mode to exception<br>
+<span style="font-family:courier new;color:brown">$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);</span>&nbsp&nbsp&nbsp //check connection<br>
+ <span style="font-family:courier new;color:red">
+echo "Connected successfully";<br>
+}</span>
+<span style="font-family:courier new;color:brown">catch(PDOException $e)<br>
+    {
+    echo "Connection failed: " . $e->getMessage();
+    }<br>
+</span>
+<span style="font-family:courier new;color:red">?></span><br>
+<p>
+<b>NOTE:</b> A great benefit of PDO is that it has an exception class to handle any problems that may occur in our database queries. If an exception is thrown within the try{ } block, the script stops executing and flows directly to the first catch(){ } block.</p>
+<h2>Closing Connection</h2>
+<span style="font-family:courier new;color:red">$conn->close();</span>&nbsp&nbsp&nbsp//MySQLi Object-Oriented<br>
+<span style="font-family:courier new;color:red">mysqli_close($conn);</span>&nbsp&nbsp&nbsp//MySQLi Procedural<br>
+<span style="font-family:courier new;color:red">$conn = null;</span>&nbsp&nbsp&nbsp//PDO<br>

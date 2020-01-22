@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>PHP Tutorial</title>
+</head>
+<body>
+<h1>PHP Data Types</h1>
+<dl>
+<dt><span style="font-size:1.5em">Integer</span>
+<dd>An integer data type is a non-decimal number between -2,147,483,648 and 2,147,483,647<br>
+	<ul>
+	<li>An integer must have at least one digit
+	<li>An integer must not have a decimal point
+	<li>An integer can be either positive or negtive
+	<li>Integers can be specified in three formats: decimal (10-based), hexadecimal (16-based - prefixed with 0x) or octal (8-based - prefixed with 0)
+	</ul>
+	<h2>Example</h2>
+	<span style="font-family:courier new;color:red" >$x=5;</span><br>
+</dd>
+<dt><span style="font-size:1.5em">Float</span>
+<dd>A float (floating point number) is a number with a decimal point or a number in exponential form.
+<h2>Example</h2>
+	<span style="font-family:courier new;color:red" >$x=5.454;</span><br>
+</dd>
+<dt><span style="font-size:1.5em">Float</span>
+<dd>A string is a sequence of characters, like "Hello world!".<br>
+A string can be any text inside quotes. You can use single or double quotes.
+<h2>Example</h2>
+	<span style="font-family:courier new;color:red" >$x='hello';</span><br>
+	<span style="font-family:courier new;color:red" >$y="hello";</span><br>
+</dd>
+<dt><span style="font-size:1.5em">Float</span>
+<dd>A Boolean represents two possible states: TRUE or FALSE.<br>
+<h2>Example</h2>
+	<span style="font-family:courier new;color:red" >$x=true;</span><br>
+	<span style="font-family:courier new;color:red" >$x=false;</span><br>
+	<b>NOTE:</b>TRUE and FALSE are reserved words and can not be used as ordinary variables<br>
+</dd>
+<dt><span style="font-size:1.5em">Arrays</span>
+<dd>Arrays are the values of similar data types stored in contigiuos memory locations.<br>
+<h2>Example</h2>
+	<span style="font-family:courier new;color:red" >$x=("a","b","c");</span><br>
+</dd>
+<dt><span style="font-size:1.5em">Objects</span>
+<dd>An object is a data type which stores data and information on how to process that data.<br>
+
+In PHP, an object must be explicitly declared.<br>
+
+First we must declare a class of object. For this, we use the class keyword. A class is a structure that can contain properties and methods.<br>
+
+<h2>Example</h2>
+	<span style="font-family:courier new;color:red"><</span>
+    <span style="font-family:courier new;color:red">?php</span>
+	<span style="color:brown;font-size:14"><pre>
+	class car
+	{
+		function mycar()
+		{
+			$this->model="XUV";
+		}
+	}</pre>
+	</span>
+	<span style="font-family:courier new;color:red">
+		
+		// create object<br></span>
+	<span style="font-family:courier new;color:brown">	
+		$maruti=new car();<br></span>
+		<span style="font-family:courier new;color:red">
+		//show properties<br></span>
+		<span style="font-family:courier new;color:brown">
+		echo $maruti->model;<br></span>
+		<span style="font-family:courier new;color:red" >?</span>
+<span style="font-family:courier new;color:red" >></span>
+</dd>
+</dl>

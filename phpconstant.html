@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>PHP Tutorial</title>
+</head>
+<body>
+<h1>PHP Constants</h1>
+A constant is an identifier (name) for a simple value. The value cannot be changed during the script.<br>
+To create a constant, use the<span style="color:red"> define()</span> function.
+<h2>Syntax</h2>
+define(name, value, case-insensitive);
+<h3>Parameters</h3>
+<ul>
+<li><i>name</i>:Specifies the name of the constant
+<li><i>value</i>:Specifies the value of the constant
+<li><i>case-insensitive</i>:Specifies whether the constant name should be case-insensitive. Default is false.
+</ul>
+<h2>Example</h2>
+<span style="font-family:courier new;color:red"><</span>
+<span style="font-family:courier new;color:red">?php</span><br>
+<span style="font-family:courier new;color:brown">define("const","This is constant",true);</span><br>
+<span style="font-family:courier new ;color:red">echo const;</span><br>
+<span style="font-family:courier new ;color:red">?></span><br>
+<h3>Output</h3>
+This is constant<br><br>
+<b>NOTE:</b>Constants are global.
